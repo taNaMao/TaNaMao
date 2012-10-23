@@ -19,6 +19,10 @@ public class Vendedor implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     	private int loja;
+	private String cnpj;
+	private String email;
+	private String login;
+	private String senha;
 	private String endereço;
     @Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataInicio;
