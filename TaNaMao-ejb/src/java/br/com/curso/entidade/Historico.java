@@ -33,6 +33,38 @@ public class Historico implements Serializable {
         this.id = id;
     }
 
+    public Date getDataPreco() {
+        return dataPreco;
+    }
+
+    public void setDataPreco(Date dataPreco) {
+        this.dataPreco = dataPreco;
+    }
+
+    public int getItem() {
+        return item;
+    }
+
+    public void setItem(int item) {
+        this.item = item;
+    }
+
+    public ItemDeLoja getItemDeLoja() {
+        return itemDeLoja;
+    }
+
+    public void setItemDeLoja(ItemDeLoja itemDeLoja) {
+        this.itemDeLoja = itemDeLoja;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -55,7 +87,8 @@ public class Historico implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.Historico[ id=" + id + " ]";
+        return "Historico{" + "id=" + id + ", item=" + item + ", preco=" + preco + ", dataPreco=" + dataPreco + ", itemDeLoja=" + itemDeLoja + '}';
     }
+
     
 }

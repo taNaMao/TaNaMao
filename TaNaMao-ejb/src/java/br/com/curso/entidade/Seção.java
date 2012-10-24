@@ -30,6 +30,14 @@ public class Seção implements Serializable {
         this.id = id;
     }
 
+    public int getNome() {
+        return nome;
+    }
+
+    public void setNome(int nome) {
+        this.nome = nome;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -52,7 +60,7 @@ public class Seção implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.Caminho[ id=" + id + " ]";
+        return "Se\u00e7\u00e3o{" + "id=" + id + ", nome=" + nome + '}';
     }
     
 }

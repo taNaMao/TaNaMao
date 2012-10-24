@@ -22,7 +22,6 @@ public class ClasseProduto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-	private int cod;
 	private String nome;
     @ManyToOne
 	private Seção seção;
@@ -34,10 +33,51 @@ public class ClasseProduto implements Serializable {
     public Long getId() {
         return id;
     }
-
+    
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getDescrição() {
+        return descrição;
+    }
+
+    public void setDescrição(String descrição) {
+        this.descrição = descrição;
+    }
+
+    public int getNoAnterior() {
+        return noAnterior;
+    }
+
+    public void setNoAnterior(int noAnterior) {
+        this.noAnterior = noAnterior;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getOrdem() {
+        return ordem;
+    }
+
+    public void setOrdem(int ordem) {
+        this.ordem = ordem;
+    }
+
+    public Seção getSeção() {
+        return seção;
+    }
+
+    public void setSeção(Seção seção) {
+        this.seção = seção;
+    }
+
 
     @Override
     public int hashCode() {
@@ -61,7 +101,9 @@ public class ClasseProduto implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.ClasseProduto[ id=" + id + " ]";
+        return "ClasseProduto{" + "id=" + id + ", nome=" + nome + ", se\u00e7\u00e3o=" + seção + ", descri\u00e7\u00e3o=" + descrição + ", noAnterior=" + noAnterior + ", ordem=" + ordem + '}';
     }
+
+    
     
 }

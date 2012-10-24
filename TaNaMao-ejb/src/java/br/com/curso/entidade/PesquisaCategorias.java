@@ -27,7 +27,7 @@ public class PesquisaCategorias implements Serializable {
     @ManyToOne
 	private Seção seção;	 
     @ManyToOne
-	private Fabricante fabricantes;
+	private Fabricante fabricante;
 
     public Long getId() {
         return id;
@@ -35,6 +35,78 @@ public class PesquisaCategorias implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public int getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(int descricao) {
+        this.descricao = descricao;
+    }
+
+    public Fabricante getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public int getNome() {
+        return nome;
+    }
+
+    public void setNome(int nome) {
+        this.nome = nome;
+    }
+
+    public Seção getSeção() {
+        return seção;
+    }
+
+    public void setSeção(Seção seção) {
+        this.seção = seção;
+    }
+
+    public int getXe() {
+        return xe;
+    }
+
+    public void setXe(int xe) {
+        this.xe = xe;
+    }
+
+    public int getXg() {
+        return xg;
+    }
+
+    public void setXg(int xg) {
+        this.xg = xg;
+    }
+
+    public int getXj() {
+        return xj;
+    }
+
+    public void setXj(int xj) {
+        this.xj = xj;
+    }
+
+    public int getXk() {
+        return xk;
+    }
+
+    public void setXk(int xk) {
+        this.xk = xk;
+    }
+
+    public int getXt() {
+        return xt;
+    }
+
+    public void setXt(int xt) {
+        this.xt = xt;
     }
 
     @Override
@@ -59,7 +131,9 @@ public class PesquisaCategorias implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.PesquisaCategorias[ id=" + id + " ]";
+        return "PesquisaCategorias{" + "id=" + id + ", xe=" + xe + ", xg=" + xg + ", xt=" + xt + ", xj=" + xj + ", xk=" + xk + ", nome=" + nome + ", descricao=" + descricao + ", se\u00e7\u00e3o=" + seção + ", fabricante=" + fabricante + '}';
     }
+
+
     
 }

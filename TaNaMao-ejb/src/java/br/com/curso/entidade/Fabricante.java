@@ -30,6 +30,14 @@ public class Fabricante implements Serializable {
         this.id = id;
     }
 
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -52,7 +60,8 @@ public class Fabricante implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.Fabricantes[ id=" + id + " ]";
+        return "Fabricante{" + "id=" + id + ", fabricante=" + fabricante + '}';
     }
+
     
 }

@@ -30,6 +30,22 @@ public class ItemDeLoja implements Serializable {
         this.id = id;
     }
 
+    public Historico getHistorico() {
+        return historico;
+    }
+
+    public void setHistorico(Historico historico) {
+        this.historico = historico;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -52,7 +68,7 @@ public class ItemDeLoja implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.ItemDeLoja[ id=" + id + " ]";
+        return "ItemDeLoja{" + "id=" + id + ", modelo=" + modelo + ", historico=" + historico + '}';
     }
     
 }

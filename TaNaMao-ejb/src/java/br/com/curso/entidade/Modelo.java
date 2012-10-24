@@ -39,6 +39,86 @@ public class Modelo implements Serializable {
         this.id = id;
     }
 
+    public ClasseProduto getClasseProduto() {
+        return classeProduto;
+    }
+
+    public void setClasseProduto(ClasseProduto classeProduto) {
+        this.classeProduto = classeProduto;
+    }
+
+    public String getEspecificacao() {
+        return especificacao;
+    }
+
+    public void setEspecificacao(String especificacao) {
+        this.especificacao = especificacao;
+    }
+
+    public Fabricante getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public PesquisaCategorias getPesquisaCategorias() {
+        return pesquisaCategorias;
+    }
+
+    public void setPesquisaCategorias(PesquisaCategorias pesquisaCategorias) {
+        this.pesquisaCategorias = pesquisaCategorias;
+    }
+
+    public int getXe() {
+        return xe;
+    }
+
+    public void setXe(int xe) {
+        this.xe = xe;
+    }
+
+    public int getXg() {
+        return xg;
+    }
+
+    public void setXg(int xg) {
+        this.xg = xg;
+    }
+
+    public int getXj() {
+        return xj;
+    }
+
+    public void setXj(int xj) {
+        this.xj = xj;
+    }
+
+    public int getXk() {
+        return xk;
+    }
+
+    public void setXk(int xk) {
+        this.xk = xk;
+    }
+
+    public int getXt() {
+        return xt;
+    }
+
+    public void setXt(int xt) {
+        this.xt = xt;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -61,7 +141,8 @@ public class Modelo implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.curso.entidade.Modelo[ id=" + id + " ]";
+        return "Modelo{" + "id=" + id + ", modelo=" + modelo + ", fabricante=" + fabricante + ", especificacao=" + especificacao + ", xe=" + xe + ", xg=" + xg + ", xt=" + xt + ", xj=" + xj + ", xk=" + xk + ", classeProduto=" + classeProduto + ", pesquisaCategorias=" + pesquisaCategorias + '}';
     }
+
     
 }

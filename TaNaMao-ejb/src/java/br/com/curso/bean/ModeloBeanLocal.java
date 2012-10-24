@@ -4,7 +4,7 @@
  */
 package br.com.curso.bean;
 
-import br.com.curso.entidade.Vendedor;
+import br.com.curso.entidade.Modelo;
 import javax.ejb.Local;
 
 /**
@@ -12,16 +12,16 @@ import javax.ejb.Local;
  * @author Bruno
  */
 @Local
-public interface VendedorBeanLocal {
-
-    void incluir(Vendedor vendedor);
+public interface ModeloBeanLocal {
 
     public void persist(java.lang.Object object);
 
-    public Vendedor consultar(Long id);
+    public void incluir(Modelo modelo);
+
+    public Modelo consultar(Long id);
 
     public void excluir(Long id);
 
-    public void alterar(Long id, Vendedor vendedor);
+    public void alterar(Long id, Modelo modelo);
     
 }
