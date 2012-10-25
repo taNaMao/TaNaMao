@@ -48,8 +48,8 @@ public class ClasseProdutoBean implements ClasseProdutoBeanLocal {
         ClasseProduto c = em.find(ClasseProduto.class, id);
 
         c.setNome(classeproduto.getNome());
-        c.setSeção(classeproduto.getSeção());
-        c.setDescrição(classeproduto.getDescrição());
+        c.setSecao(classeproduto.getSecao());
+        c.setDescricao(classeproduto.getDescricao());
         c.setNoAnterior(classeproduto.getNoAnterior());
         c.setOrdem(classeproduto.getOrdem());
 

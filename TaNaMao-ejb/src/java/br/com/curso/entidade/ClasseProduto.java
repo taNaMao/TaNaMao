@@ -24,8 +24,8 @@ public class ClasseProduto implements Serializable {
     private Long id;
 	private String nome;
     @ManyToOne
-	private Seção seção;
-	private String descrição;
+	private Secao secao;
+	private String descricao;
 	private int noAnterior;
 	private int ordem;
     
@@ -38,12 +38,12 @@ public class ClasseProduto implements Serializable {
         this.id = id;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public int getNoAnterior() {
@@ -70,12 +70,12 @@ public class ClasseProduto implements Serializable {
         this.ordem = ordem;
     }
 
-    public Seção getSeção() {
-        return seção;
+    public Secao getSecao() {
+        return secao;
     }
 
-    public void setSeção(Seção seção) {
-        this.seção = seção;
+    public void setSecao(Secao secao) {
+        this.secao = secao;
     }
 
 
@@ -101,7 +101,7 @@ public class ClasseProduto implements Serializable {
 
     @Override
     public String toString() {
-        return "ClasseProduto{" + "id=" + id + ", nome=" + nome + ", se\u00e7\u00e3o=" + seção + ", descri\u00e7\u00e3o=" + descrição + ", noAnterior=" + noAnterior + ", ordem=" + ordem + '}';
+        return "ClasseProduto{" + "id=" + id + ", nome=" + nome + ", se\u00e7\u00e3o=" + secao + ", descri\u00e7\u00e3o=" + descricao + ", noAnterior=" + noAnterior + ", ordem=" + ordem + '}';
     }
 
     

@@ -51,7 +51,7 @@ public class VendedorBean implements VendedorBeanLocal {
         v.setEmail(vendedor.getEmail());
         v.setLogin(vendedor.getLogin());
         v.setSenha(vendedor.getSenha());
-        v.setEndereço(vendedor.getEndereço());
+        v.setEndereco(vendedor.getEndereco());
         v.setDataInicio(vendedor.getDataInicio());
         v.setRegiao(vendedor.getRegiao());
         v.setPraFora(vendedor.isPraFora());

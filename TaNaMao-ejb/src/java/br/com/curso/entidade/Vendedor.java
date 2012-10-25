@@ -22,7 +22,7 @@ public class Vendedor implements Serializable {
 	private String email;
 	private String login;
 	private String senha;
-	private String endereço;
+	private String endereco;
     @Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataInicio;
 	private char regiao;
@@ -63,12 +63,12 @@ public class Vendedor implements Serializable {
         this.email = email;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getLogin() {
@@ -141,7 +141,7 @@ public class Vendedor implements Serializable {
 
     @Override
     public String toString() {
-        return "Vendedor{" + "id=" + id + ", cnpj=" + cnpj + ", email=" + email + ", login=" + login + ", senha=" + senha + ", endere\u00e7o=" + endereço + ", dataInicio=" + dataInicio + ", regiao=" + regiao + ", praFora=" + praFora + ", podeParcelar=" + podeParcelar + ", tel=" + tel + '}';
+        return "Vendedor{" + "id=" + id + ", cnpj=" + cnpj + ", email=" + email + ", login=" + login + ", senha=" + senha + ", endere\u00e7o=" + endereco + ", dataInicio=" + dataInicio + ", regiao=" + regiao + ", praFora=" + praFora + ", podeParcelar=" + podeParcelar + ", tel=" + tel + '}';
     }
     
 }

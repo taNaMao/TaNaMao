@@ -54,7 +54,7 @@ public class PesquisaCategoriasBean implements PesquisaCategoriasBeanLocal {
 	p.setXk(pesquisacategorias.getXk());
 	p.setNome(pesquisacategorias.getNome());
 	p.setDescricao(pesquisacategorias.getDescricao());
-	p.setSeção(pesquisacategorias.getSeção());
+	p.setSecao(pesquisacategorias.getSecao());
 	p.setFabricante(pesquisacategorias.getFabricante());
 
     }

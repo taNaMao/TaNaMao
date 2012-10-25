@@ -4,7 +4,7 @@
  */
 package br.com.curso.bean;
 
-import br.com.curso.entidade.Seção;
+import br.com.curso.entidade.Secao;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -14,7 +14,7 @@ import javax.persistence.PersistenceContext;
  * @author Bruno
  */
 @Stateless
-public class SeçãoBean implements SeçãoBeanLocal {
+public class SecaoBean implements SecaoBeanLocal {
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
@@ -23,8 +23,8 @@ public class SeçãoBean implements SeçãoBeanLocal {
     private EntityManager em;
 
     @Override
-    public void incluir(Seção seção) {
-        em.persist(seção);
+    public void incluir(Secao secao) {
+        em.persist(secao);
     }
     
     @Override
@@ -33,21 +33,21 @@ public class SeçãoBean implements SeçãoBeanLocal {
     }
 
     @Override
-    public Seção consultar(Long id) {
-        return (em.find(Seção.class, id));
+    public Secao consultar(Long id) {
+        return (em.find(Secao.class, id));
     }
     
     @Override
     public void excluir(Long id) {
-        Seção s = em.find(Seção.class, id);
+        Secao s = em.find(Secao.class, id);
         em.remove(s);
     }
 
     @Override
-    public void alterar(Long id, Seção seção) {
-        Seção s = em.find(Seção.class, id);
+    public void alterar(Long id, Secao secao) {
+        Secao s = em.find(Secao.class, id);
 
-    s.setNome(seção.getNome());
-
+    s.setNome(secao.getNome());
+    
     }
 }

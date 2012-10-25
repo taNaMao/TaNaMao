@@ -25,7 +25,7 @@ public class PesquisaCategorias implements Serializable {
 	private int nome;
 	private int descricao;
     @ManyToOne
-	private Seção seção;	 
+	private Secao secao;	 
     @ManyToOne
 	private Fabricante fabricante;
 
@@ -61,12 +61,12 @@ public class PesquisaCategorias implements Serializable {
         this.nome = nome;
     }
 
-    public Seção getSeção() {
-        return seção;
+    public Secao getSecao() {
+        return secao;
     }
 
-    public void setSeção(Seção seção) {
-        this.seção = seção;
+    public void setSecao(Secao secao) {
+        this.secao = secao;
     }
 
     public int getXe() {
@@ -131,7 +131,7 @@ public class PesquisaCategorias implements Serializable {
 
     @Override
     public String toString() {
-        return "PesquisaCategorias{" + "id=" + id + ", xe=" + xe + ", xg=" + xg + ", xt=" + xt + ", xj=" + xj + ", xk=" + xk + ", nome=" + nome + ", descricao=" + descricao + ", se\u00e7\u00e3o=" + seção + ", fabricante=" + fabricante + '}';
+        return "PesquisaCategorias{" + "id=" + id + ", xe=" + xe + ", xg=" + xg + ", xt=" + xt + ", xj=" + xj + ", xk=" + xk + ", nome=" + nome + ", descricao=" + descricao + ", se\u00e7\u00e3o=" + secao + ", fabricante=" + fabricante + '}';
     }
 
 

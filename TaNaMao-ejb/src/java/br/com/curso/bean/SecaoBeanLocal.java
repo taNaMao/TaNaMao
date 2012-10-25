@@ -4,7 +4,7 @@
  */
 package br.com.curso.bean;
 
-import br.com.curso.entidade.Seção;
+import br.com.curso.entidade.Secao;
 import javax.ejb.Local;
 
 /**
@@ -12,16 +12,16 @@ import javax.ejb.Local;
  * @author Bruno
  */
 @Local
-public interface SeçãoBeanLocal {
+public interface SecaoBeanLocal {
 
     public void persist(java.lang.Object object);
 
-    public void incluir(Seção seção);
+    public void incluir(Secao secao);
 
-    public Seção consultar(Long id);
+    public Secao consultar(Long id);
 
     public void excluir(Long id);
 
-    public void alterar(Long id, Seção seção);
+    public void alterar(Long id, Secao secao);
     
 }
